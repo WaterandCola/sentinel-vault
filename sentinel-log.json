@@ -1,0 +1,57 @@
+[
+  {
+    "timestamp": "2026-03-14T17:55:45.510Z",
+    "rates": [
+      {
+        "name": "Save (Solend)",
+        "apy": 3.03,
+        "tvl": 4760410,
+        "apyBase": 3.03,
+        "apyReward": 0
+      },
+      {
+        "name": "Kamino Lend",
+        "apy": 1.82488,
+        "tvl": 86440642,
+        "apyBase": 1.82488,
+        "apyReward": 0
+      }
+    ],
+    "vaultState": {
+      "idle": 0
+    },
+    "action": "rebalance_needed",
+    "reasoning": "Save (Solend) (3.03%) is >15% better than Jupiter Lend (?%). Rebalance recommended when strategy is available."
+  },
+  {
+    "timestamp": "2026-03-14T17:56:21.554Z",
+    "rates": [
+      {
+        "name": "Jupiter Lend",
+        "apy": 3.33015,
+        "tvl": 523244375,
+        "apyBase": 2.20387,
+        "apyReward": 1.12628
+      },
+      {
+        "name": "Save (Solend)",
+        "apy": 3.03,
+        "tvl": 4760410,
+        "apyBase": 3.03,
+        "apyReward": 0
+      },
+      {
+        "name": "Kamino Lend",
+        "apy": 1.82488,
+        "tvl": 86440642,
+        "apyBase": 1.82488,
+        "apyReward": 0
+      }
+    ],
+    "vaultState": {
+      "idle": 0
+    },
+    "action": "hold",
+    "reasoning": "Jupiter Lend at 3.33% APY. Best available: Jupiter Lend at 3.33%. No action needed."
+  }
+]
