@@ -64,3 +64,33 @@ Most yield vaults use static allocation rules or simple APY-chasing. Sentinel ta
 ## Built for
 
 🐻 Ranger Build-A-Bear Hackathon — Main Track
+
+## Live Deployment (Mainnet)
+
+- **Vault**: [`F8qBvxBi2kp6vViu43yfvpTm7osZwUpC2qerFeUV3GSH`](https://solscan.io/account/F8qBvxBi2kp6vViu43yfvpTm7osZwUpC2qerFeUV3GSH)
+- **Asset**: USDC
+- **Strategies**:
+  - Jupiter Lend USDC (`2vVYHYM8VYnvZqQWpTJSj8o8DBf1wM8pVs3bsTgYZiqJ`)
+- **Adaptors**: Lending + Spot (Jupiter)
+
+## Scripts
+
+```bash
+# Deploy vault
+node src/create-vault.cjs
+
+# Add adaptors
+node src/add-adaptor.cjs
+
+# Initialize Jupiter Lend strategy
+node src/init-jupiter-strategy.cjs
+
+# Swap SOL→USDC and deposit into vault
+node src/swap-and-deposit.cjs 0.2
+
+# Allocate vault funds to Jupiter Lend
+node src/deposit-to-jupiter.cjs 10
+
+# Withdraw from vault
+node src/withdraw.cjs all
+```
