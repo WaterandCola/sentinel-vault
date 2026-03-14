@@ -100,8 +100,27 @@ Sentinel AI Engine
 
 ## Technical Implementation
 
-- **Vault**: Ranger Earn SDK (@voltr/vault-sdk)
-- **Adaptors**: Lending Adaptor + Drift Adaptor
-- **Strategies**: Kamino USDC Lend, Jupiter USDC Lend, Drift Spot Lend, Drift Perps
-- **Bot**: Node.js/TypeScript cron running on dedicated server
-- **Monitoring**: Real-time dashboard + Telegram alerts
+- **Vault**: Ranger Earn SDK (@voltr/vault-sdk) v1.0.20
+- **Vault Address**: `F8qBvxBi2kp6vViu43yfvpTm7osZwUpC2qerFeUV3GSH` (Mainnet)
+- **Adaptors**: Lending Adaptor + Spot Adaptor (Jupiter)
+- **Strategies**: Jupiter USDC Lend (live), Kamino USDC Lend (planned), Save USDC (planned)
+- **Bot**: Node.js sentinel-bot.cjs — fetches rates from DeFi Llama, AI allocation engine
+- **Monitoring**: Real-time rate monitoring + Telegram alerts to vault manager
+- **GitHub**: https://github.com/WaterandCola/sentinel-vault
+
+## Live Performance Data
+
+| Protocol | Current APY | TVL | Status |
+|----------|-----------|-----|--------|
+| Jupiter Lend | 3.33% | $523M | ✅ Active Strategy |
+| Save (Solend) | 3.03% | $4.8M | 🔜 Planned |
+| Kamino Lend | 1.82% | $86.4M | 🔜 Planned |
+
+## Backtest Results (12 weeks, $100K USDC)
+
+| Strategy | APY | Return | Sharpe |
+|----------|-----|--------|--------|
+| Static Jupiter | 4.14% | $956 | - |
+| AI Dynamic Lending | 3.21% | $741 | - |
+| Sentinel 35/65 | 8.05% | $1,857 | - |
+| Smart Sentinel + Multi-Market | 9.91% | $2,287 | 15.52 |
