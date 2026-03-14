@@ -32,29 +32,35 @@ async function swapAndDeposit(solAmount) {
 
   const lamports = Math.floor(solAmount * 1e9);
 
-  // Step 1: Get Jupiter quote
-  console.log('\n1️⃣ Getting Jupiter swap quote...');
-  const quoteUrl = `https://quote-api.jup.ag/v6/quote?inputMint=${SOL_MINT}&outputMint=${USDC_MINT}&amount=${lamports}&slippageBps=50`;
+  // Step 1: Get Raydium swap quote
+  console.log('\n1️⃣ Getting Raydium swap quote...');
+  const quoteUrl = `https://transaction-v1.raydium.io/compute/swap-base-in?inputMint=${SOL_MINT}&outputMint=${USDC_MINT}&amount=${lamports}&slippageBps=50&txVersion=V0`;
   const quoteResp = await fetch(quoteUrl);
-  const quote = await quoteResp.json();
-  const outAmount = parseInt(quote.outAmount);
+  const quoteData = await quoteResp.json();
+  if (!quoteData.success) throw new Error('Quote failed: ' + JSON.stringify(quoteData));
+  const outAmount = parseInt(quoteData.data.outputAmount);
   console.log(`   ${solAmount} SOL → ${(outAmount / 1e6).toFixed(2)} USDC`);
 
-  // Step 2: Get swap transaction
+  // Step 2: Get swap transaction from Raydium
   console.log('\n2️⃣ Building swap transaction...');
-  const swapResp = await fetch('https://quote-api.jup.ag/v6/swap', {
+  const swapResp = await fetch('https://transaction-v1.raydium.io/transaction/swap-base-in', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
-      quoteResponse: quote,
-      userPublicKey: userKp.publicKey.toBase58(),
-      wrapAndUnwrapSol: true,
+      computeUnitPriceMicroLamports: '100000',
+      swapResponse: quoteData,
+      txVersion: 'V0',
+      wallet: userKp.publicKey.toBase58(),
+      wrapSol: true,
+      unwrapSol: false,
     }),
   });
   const swapData = await swapResp.json();
+  if (!swapData.success) throw new Error('Swap tx failed: ' + JSON.stringify(swapData));
   
   // Deserialize and sign
-  const swapTxBuf = Buffer.from(swapData.swapTransaction, 'base64');
+  const txData = swapData.data[0]; // Raydium returns array of transactions
+  const swapTxBuf = Buffer.from(txData.transaction, 'base64');
   const swapTx = VersionedTransaction.deserialize(swapTxBuf);
   swapTx.sign([userKp]);
 

@@ -78,6 +78,7 @@ async function depositToJupiter(amountUsdc) {
   console.log(`Amount: ${depositAmount.toString()} (${amountUsdc} USDC)`);
 
   const remainingAccounts = [
+    { pubkey: lending, isSigner: false, isWritable: true },
     { pubkey: vaultStrategyFTokenAta, isSigner: false, isWritable: true },
     { pubkey: lendingAdmin, isSigner: false, isWritable: false },
     { pubkey: fTokenMint, isSigner: false, isWritable: true },
