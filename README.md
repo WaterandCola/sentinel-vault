@@ -16,28 +16,46 @@ Most yield vaults use static allocation rules or simple APY-chasing. Sentinel ta
 ## Architecture
 
 ```
-┌─────────────────────────────────────────────┐
-│              Sentinel AI Engine              │
-│  ┌─────────┐ ┌──────────┐ ┌──────────────┐  │
-│  │ Monitor │ │ Analyzer │ │  Allocator   │  │
-│  │  Agent  │ │  Agent   │ │    Agent     │  │
-│  └────┬────┘ └────┬─────┘ └──────┬───────┘  │
-│       │           │              │           │
-│  ┌────▼───────────▼──────────────▼────────┐  │
-│  │         Decision Engine                │  │
-│  │  - Rate prediction                     │  │
-│  │  - Risk scoring                        │  │
-│  │  - Optimal allocation calculation      │  │
-│  └────────────────┬───────────────────────┘  │
-└───────────────────┼──────────────────────────┘
+┌─────────────────────────────────────────────────────┐
+│                Sentinel AI Engine                    │
+│  ┌─────────┐ ┌──────────┐ ┌──────────────┐          │
+│  │ Monitor │ │ Analyzer │ │  Allocator   │          │
+│  │  Agent  │ │  Agent   │ │    Agent     │          │
+│  └────┬────┘ └────┬─────┘ └──────┬───────┘          │
+│       │           │              │                   │
+│  ┌────▼───────────▼──────────────▼────────────────┐  │
+│  │            Decision Engine                     │  │
+│  │  - Lending rate prediction                     │  │
+│  │  - Drift funding rate trend analysis           │  │
+│  │  - Risk scoring & position sizing              │  │
+│  │  - Optimal allocation calculation              │  │
+│  └────────────────┬───────────────────────────────┘  │
+└───────────────────┼──────────────────────────────────┘
                     │
     ┌───────────────┼───────────────┐
     ▼               ▼               ▼
 ┌────────┐   ┌──────────┐   ┌──────────┐
-│ Kamino │   │  Drift   │   │ Marginfi │
-│ Lend   │   │  Spot    │   │  Lend    │
+│Jupiter │   │  Drift   │   │ Kamino   │
+│ Lend   │   │  Perps   │   │  Lend    │
 └────────┘   └──────────┘   └──────────┘
 ```
+
+## Strategies
+
+### 1. Lending Yield (Active)
+- Monitors Jupiter Lend, Kamino, Save (Solend), Drift, Marginfi
+- Auto-allocates to highest risk-adjusted yield
+- Currently: Jupiter Lend USDC at ~3.3% APY
+
+### 2. Drift Funding Rate Farming (Monitoring)
+- Delta-neutral: long spot SOL + short SOL-PERP on Drift
+- Collects funding payments when longs pay shorts
+- AI monitors 72h funding rate trends, enters only when:
+  - Annualized rate > 5%
+  - 12+ consecutive positive hours
+  - Trend not falling
+- Auto-exits when funding flips negative for 6+ hours
+- Target: 5-20% additional APY during favorable conditions
 
 ## Key Features
 
@@ -63,7 +81,7 @@ Most yield vaults use static allocation rules or simple APY-chasing. Sentinel ta
 
 ## Built for
 
-🐻 Ranger Build-A-Bear Hackathon — Main Track
+🐻 Ranger Build-A-Bear Hackathon — Main Track + Drift Side Track
 
 ## Live Deployment (Mainnet)
 
@@ -93,4 +111,10 @@ node src/deposit-to-jupiter.cjs 10
 
 # Withdraw from vault
 node src/withdraw.cjs all
+
+# Run AI monitor (lending + Drift funding analysis)
+node src/sentinel-bot.cjs
+
+# Run Drift funding rate strategy analysis standalone
+node src/drift-strategy.cjs
 ```

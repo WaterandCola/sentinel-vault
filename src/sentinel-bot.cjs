@@ -110,6 +110,22 @@ function aiDecision(rates, vaultState) {
   return decision;
 }
 
+// Drift funding rate analysis
+const { fetchFundingRates, analyzeTrend, makeDecision: makeDriftDecision } = require('./drift-strategy.cjs');
+
+async function getDriftAnalysis() {
+  try {
+    const rates = await fetchFundingRates('SOL-PERP');
+    const analysis = analyzeTrend(rates, 72);
+    if (!analysis) return null;
+    const decision = makeDriftDecision(analysis);
+    return { analysis, decision };
+  } catch (e) {
+    console.log(`   ⚠️ Drift analysis failed: ${e.message}`);
+    return null;
+  }
+}
+
 // Log decision
 function logDecision(decision) {
   let logs = [];
@@ -138,11 +154,22 @@ async function run() {
   console.log(`   Idle USDC: $${vaultState.idleUsdc.toFixed(2)}`);
   console.log(`   Strategies: ${vaultState.strategies.length}`);
 
-  // AI decision
-  console.log('\n🤖 AI Decision...');
+  // AI decision (lending)
+  console.log('\n🤖 AI Decision (Lending)...');
   const decision = aiDecision(rates, vaultState);
   console.log(`   Action: ${decision.action}`);
   console.log(`   Reasoning: ${decision.reasoning}`);
+
+  // Drift funding rate analysis
+  console.log('\n📈 Drift Funding Rate Analysis...');
+  const drift = await getDriftAnalysis();
+  if (drift) {
+    console.log(`   SOL-PERP funding: ${drift.analysis.avgAnnualPct.toFixed(2)}% annualized`);
+    console.log(`   Trend: ${drift.analysis.trend} | +${drift.analysis.consecutivePositive}h / -${drift.analysis.consecutiveNegative}h`);
+    console.log(`   Drift action: ${drift.decision.action}`);
+    console.log(`   Reasoning: ${drift.decision.reasoning}`);
+    decision.drift = drift.decision;
+  }
 
   // Log
   logDecision(decision);
