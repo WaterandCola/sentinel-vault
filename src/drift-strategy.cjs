@@ -18,6 +18,17 @@ const RPC_URL = 'https://api.mainnet-beta.solana.com';
 const KEYPAIR_PATH = '/home/ubuntu/.config/solana/taizi-wallet.json';
 const DRIFT_API = 'https://data.api.drift.trade';
 
+// Exponential Moving Average
+function computeEMA(values, period) {
+  if (values.length === 0) return 0;
+  const k = 2 / (period + 1);
+  let ema = values[0];
+  for (let i = 1; i < values.length; i++) {
+    ema = values[i] * k + ema * (1 - k);
+  }
+  return ema;
+}
+
 // Market indices on Drift
 const MARKETS = {
   'SOL-PERP': 0,
@@ -91,16 +102,18 @@ function analyzeTrend(rates, lookbackHours = 72) {
     }
   }
 
-  // Trend detection: compare first half vs second half
-  const mid = Math.floor(recent.length / 2);
-  const firstHalf = recent.slice(0, mid);
-  const secondHalf = recent.slice(mid);
-  const firstAvg = firstHalf.reduce((s, r) => s + r.hourlyPct, 0) / firstHalf.length;
-  const secondAvg = secondHalf.reduce((s, r) => s + r.hourlyPct, 0) / secondHalf.length;
+  // EMA-based trend detection (more responsive than simple halves)
+  const sortedAsc = [...recent].sort((a, b) => a.ts - b.ts);
+  const emaShort = computeEMA(sortedAsc.map(r => r.hourlyPct), 6);  // 6h EMA
+  const emaLong = computeEMA(sortedAsc.map(r => r.hourlyPct), 24);  // 24h EMA
   
+  // Momentum: short EMA vs long EMA
+  const momentum = emaShort - emaLong;
+  
+  // Trend from EMA crossover
   let trend = 'stable';
-  if (secondAvg > firstAvg * 1.2) trend = 'rising';
-  else if (secondAvg < firstAvg * 0.8) trend = 'falling';
+  if (momentum > 0.0001) trend = 'rising';
+  else if (momentum < -0.0001) trend = 'falling';
 
   // Volatility (std dev)
   const variance = recent.reduce((s, r) => s + Math.pow(r.hourlyPct - avgHourly, 2), 0) / recent.length;
@@ -112,6 +125,9 @@ function analyzeTrend(rates, lookbackHours = 72) {
     consecutivePositive,
     consecutiveNegative,
     trend,
+    momentum,
+    emaShort,
+    emaLong,
     volatility,
     dataPoints: recent.length,
     latestRate: sorted[0],
