@@ -15,7 +15,8 @@
     "@kamino-finance/klend-sdk": "^7.3.20",
     "@solana/spl-token": "^0.4.14",
     "@solana/web3.js": "^1.98.4",
-    "@voltr/vault-sdk": "^1.0.20"
+    "@voltr/vault-sdk": "^1.0.20",
+    "puppeteer": "^24.39.1"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",

@@ -314,5 +314,1017 @@
       "reasoning": "No entry: funding rate -7.8% below 5% threshold, only 0h consecutive positive (need 12h). Keeping capital in Jupiter Lend.",
       "confidence": 0
     }
+  },
+  {
+    "timestamp": "2026-03-15T05:50:18.224Z",
+    "rates": [
+      {
+        "name": "Jupiter Lend",
+        "apy": 3.34037,
+        "tvl": 522474174,
+        "apyBase": 2.21409,
+        "apyReward": 1.12628
+      },
+      {
+        "name": "Save (Solend)",
+        "apy": 3.03,
+        "tvl": 4757281,
+        "apyBase": 3.03,
+        "apyReward": 0
+      },
+      {
+        "name": "Kamino Lend",
+        "apy": 1.8205,
+        "tvl": 86748794,
+        "apyBase": 1.8205,
+        "apyReward": 0
+      }
+    ],
+    "vaultState": {
+      "idle": 0
+    },
+    "action": "hold",
+    "reasoning": "Jupiter Lend at 3.34% APY. Best available: Jupiter Lend at 3.34%. No action needed.",
+    "drift": {
+      "timestamp": "2026-03-15T05:50:18.616Z",
+      "analysis": {
+        "avgAnnual": "-7.76%",
+        "trend": "rising",
+        "consecutivePositive": 0,
+        "consecutiveNegative": 5,
+        "volatility": "0.0013"
+      },
+      "action": "hold",
+      "reasoning": "No entry: funding rate -7.8% below 5% threshold, only 0h consecutive positive (need 12h). Keeping capital in Jupiter Lend.",
+      "confidence": 0
+    }
+  },
+  {
+    "timestamp": "2026-03-15T06:19:38.651Z",
+    "rates": [
+      {
+        "name": "Jupiter Lend",
+        "apy": 3.34037,
+        "tvl": 522474174,
+        "apyBase": 2.21409,
+        "apyReward": 1.12628
+      },
+      {
+        "name": "Save (Solend)",
+        "apy": 3.03,
+        "tvl": 4757281,
+        "apyBase": 3.03,
+        "apyReward": 0
+      },
+      {
+        "name": "Kamino Lend",
+        "apy": 1.8205,
+        "tvl": 86748794,
+        "apyBase": 1.8205,
+        "apyReward": 0
+      }
+    ],
+    "vaultState": {
+      "idle": 0
+    },
+    "action": "hold",
+    "reasoning": "Jupiter Lend at 3.34% APY. Best available: Jupiter Lend at 3.34%. No action needed.",
+    "drift": {
+      "timestamp": "2026-03-15T06:19:39.012Z",
+      "analysis": {
+        "avgAnnual": "-7.99%",
+        "trend": "rising",
+        "consecutivePositive": 0,
+        "consecutiveNegative": 5,
+        "volatility": "0.0013"
+      },
+      "action": "hold",
+      "reasoning": "No entry: funding rate -8.0% below 5% threshold, only 0h consecutive positive (need 12h). Keeping capital in Jupiter Lend.",
+      "confidence": 0
+    }
+  },
+  {
+    "timestamp": "2026-03-15T06:49:30.217Z",
+    "rates": [
+      {
+        "name": "Jupiter Lend",
+        "apy": 3.34037,
+        "tvl": 522484264,
+        "apyBase": 2.21409,
+        "apyReward": 1.12628
+      },
+      {
+        "name": "Save (Solend)",
+        "apy": 3.04,
+        "tvl": 4709817,
+        "apyBase": 3.04,
+        "apyReward": 0
+      },
+      {
+        "name": "Kamino Lend",
+        "apy": 1.82298,
+        "tvl": 86555580,
+        "apyBase": 1.82298,
+        "apyReward": 0
+      }
+    ],
+    "vaultState": {
+      "idle": 0
+    },
+    "action": "hold",
+    "reasoning": "Jupiter Lend at 3.34% APY. Best available: Jupiter Lend at 3.34%. No action needed.",
+    "drift": {
+      "timestamp": "2026-03-15T06:49:30.556Z",
+      "analysis": {
+        "avgAnnual": "-7.98%",
+        "trend": "rising",
+        "consecutivePositive": 0,
+        "consecutiveNegative": 6,
+        "volatility": "0.0013"
+      },
+      "action": "hold",
+      "reasoning": "No entry: funding rate -8.0% below 5% threshold, only 0h consecutive positive (need 12h). Keeping capital in Jupiter Lend.",
+      "confidence": 0
+    }
+  },
+  {
+    "timestamp": "2026-03-15T07:19:33.957Z",
+    "rates": [
+      {
+        "name": "Jupiter Lend",
+        "apy": 3.34037,
+        "tvl": 522484264,
+        "apyBase": 2.21409,
+        "apyReward": 1.12628
+      },
+      {
+        "name": "Save (Solend)",
+        "apy": 3.04,
+        "tvl": 4709817,
+        "apyBase": 3.04,
+        "apyReward": 0
+      },
+      {
+        "name": "Kamino Lend",
+        "apy": 1.82298,
+        "tvl": 86555580,
+        "apyBase": 1.82298,
+        "apyReward": 0
+      }
+    ],
+    "vaultState": {
+      "idle": 0
+    },
+    "action": "hold",
+    "reasoning": "Jupiter Lend at 3.34% APY. Best available: Jupiter Lend at 3.34%. No action needed.",
+    "drift": {
+      "timestamp": "2026-03-15T07:19:34.421Z",
+      "analysis": {
+        "avgAnnual": "-8.21%",
+        "trend": "rising",
+        "consecutivePositive": 0,
+        "consecutiveNegative": 6,
+        "volatility": "0.0013"
+      },
+      "action": "hold",
+      "reasoning": "No entry: funding rate -8.2% below 5% threshold, only 0h consecutive positive (need 12h). Keeping capital in Jupiter Lend.",
+      "confidence": 0
+    }
+  },
+  {
+    "timestamp": "2026-03-15T07:49:29.794Z",
+    "rates": [
+      {
+        "name": "Jupiter Lend",
+        "apy": 3.34037,
+        "tvl": 522546469,
+        "apyBase": 2.21409,
+        "apyReward": 1.12628
+      },
+      {
+        "name": "Save (Solend)",
+        "apy": 3.04,
+        "tvl": 4709831,
+        "apyBase": 3.04,
+        "apyReward": 0
+      },
+      {
+        "name": "Kamino Lend",
+        "apy": 1.81969,
+        "tvl": 86811257,
+        "apyBase": 1.81969,
+        "apyReward": 0
+      }
+    ],
+    "vaultState": {
+      "idle": 0
+    },
+    "action": "hold",
+    "reasoning": "Jupiter Lend at 3.34% APY. Best available: Jupiter Lend at 3.34%. No action needed.",
+    "drift": {
+      "timestamp": "2026-03-15T07:49:30.165Z",
+      "analysis": {
+        "avgAnnual": "-8.25%",
+        "trend": "rising",
+        "consecutivePositive": 0,
+        "consecutiveNegative": 7,
+        "volatility": "0.0013"
+      },
+      "action": "hold",
+      "reasoning": "No entry: funding rate -8.3% below 5% threshold, only 0h consecutive positive (need 12h). Keeping capital in Jupiter Lend.",
+      "confidence": 0
+    }
+  },
+  {
+    "timestamp": "2026-03-15T08:19:39.714Z",
+    "rates": [
+      {
+        "name": "Jupiter Lend",
+        "apy": 3.34037,
+        "tvl": 522546469,
+        "apyBase": 2.21409,
+        "apyReward": 1.12628
+      },
+      {
+        "name": "Save (Solend)",
+        "apy": 3.04,
+        "tvl": 4709831,
+        "apyBase": 3.04,
+        "apyReward": 0
+      },
+      {
+        "name": "Kamino Lend",
+        "apy": 1.81969,
+        "tvl": 86811257,
+        "apyBase": 1.81969,
+        "apyReward": 0
+      }
+    ],
+    "vaultState": {
+      "idle": 0
+    },
+    "action": "hold",
+    "reasoning": "Jupiter Lend at 3.34% APY. Best available: Jupiter Lend at 3.34%. No action needed.",
+    "drift": {
+      "timestamp": "2026-03-15T08:19:39.874Z",
+      "analysis": {
+        "avgAnnual": "-8.49%",
+        "trend": "rising",
+        "consecutivePositive": 0,
+        "consecutiveNegative": 7,
+        "volatility": "0.0013"
+      },
+      "action": "hold",
+      "reasoning": "No entry: funding rate -8.5% below 5% threshold, only 0h consecutive positive (need 12h). Keeping capital in Jupiter Lend.",
+      "confidence": 0
+    }
+  },
+  {
+    "timestamp": "2026-03-15T08:49:39.625Z",
+    "rates": [
+      {
+        "name": "Jupiter Lend",
+        "apy": 3.34037,
+        "tvl": 522592815,
+        "apyBase": 2.21409,
+        "apyReward": 1.12628
+      },
+      {
+        "name": "Save (Solend)",
+        "apy": 3.04,
+        "tvl": 4709820,
+        "apyBase": 3.04,
+        "apyReward": 0
+      },
+      {
+        "name": "Kamino Lend",
+        "apy": 1.819,
+        "tvl": 86822514,
+        "apyBase": 1.819,
+        "apyReward": 0
+      }
+    ],
+    "vaultState": {
+      "idle": 0
+    },
+    "action": "hold",
+    "reasoning": "Jupiter Lend at 3.34% APY. Best available: Jupiter Lend at 3.34%. No action needed.",
+    "drift": {
+      "timestamp": "2026-03-15T08:49:40.483Z",
+      "analysis": {
+        "avgAnnual": "-8.54%",
+        "trend": "rising",
+        "consecutivePositive": 0,
+        "consecutiveNegative": 8,
+        "volatility": "0.0013"
+      },
+      "action": "hold",
+      "reasoning": "No entry: funding rate -8.5% below 5% threshold, only 0h consecutive positive (need 12h). Keeping capital in Jupiter Lend.",
+      "confidence": 0
+    }
+  },
+  {
+    "timestamp": "2026-03-15T09:19:41.829Z",
+    "rates": [
+      {
+        "name": "Jupiter Lend",
+        "apy": 3.34037,
+        "tvl": 522592815,
+        "apyBase": 2.21409,
+        "apyReward": 1.12628
+      },
+      {
+        "name": "Save (Solend)",
+        "apy": 3.04,
+        "tvl": 4709820,
+        "apyBase": 3.04,
+        "apyReward": 0
+      },
+      {
+        "name": "Kamino Lend",
+        "apy": 1.819,
+        "tvl": 86822514,
+        "apyBase": 1.819,
+        "apyReward": 0
+      }
+    ],
+    "vaultState": {
+      "idle": 0
+    },
+    "action": "hold",
+    "reasoning": "Jupiter Lend at 3.34% APY. Best available: Jupiter Lend at 3.34%. No action needed.",
+    "drift": {
+      "timestamp": "2026-03-15T09:19:43.251Z",
+      "analysis": {
+        "avgAnnual": "-8.57%",
+        "trend": "rising",
+        "consecutivePositive": 0,
+        "consecutiveNegative": 8,
+        "volatility": "0.0013"
+      },
+      "action": "hold",
+      "reasoning": "No entry: funding rate -8.6% below 5% threshold, only 0h consecutive positive (need 12h). Keeping capital in Jupiter Lend.",
+      "confidence": 0
+    }
+  },
+  {
+    "timestamp": "2026-03-15T09:49:42.105Z",
+    "rates": [
+      {
+        "name": "Jupiter Lend",
+        "apy": 3.34037,
+        "tvl": 522681666,
+        "apyBase": 2.21409,
+        "apyReward": 1.12628
+      },
+      {
+        "name": "Save (Solend)",
+        "apy": 3.04,
+        "tvl": 4709789,
+        "apyBase": 3.04,
+        "apyReward": 0
+      },
+      {
+        "name": "Kamino Lend",
+        "apy": 1.81598,
+        "tvl": 87055860,
+        "apyBase": 1.81598,
+        "apyReward": 0
+      }
+    ],
+    "vaultState": {
+      "idle": 0
+    },
+    "action": "hold",
+    "reasoning": "Jupiter Lend at 3.34% APY. Best available: Jupiter Lend at 3.34%. No action needed.",
+    "drift": {
+      "timestamp": "2026-03-15T09:49:43.665Z",
+      "analysis": {
+        "avgAnnual": "-8.48%",
+        "trend": "rising",
+        "consecutivePositive": 0,
+        "consecutiveNegative": 9,
+        "volatility": "0.0013"
+      },
+      "action": "hold",
+      "reasoning": "No entry: funding rate -8.5% below 5% threshold, only 0h consecutive positive (need 12h). Keeping capital in Jupiter Lend.",
+      "confidence": 0
+    }
+  },
+  {
+    "timestamp": "2026-03-15T10:19:40.622Z",
+    "rates": [
+      {
+        "name": "Jupiter Lend",
+        "apy": 3.34037,
+        "tvl": 522681666,
+        "apyBase": 2.21409,
+        "apyReward": 1.12628
+      },
+      {
+        "name": "Save (Solend)",
+        "apy": 3.04,
+        "tvl": 4709789,
+        "apyBase": 3.04,
+        "apyReward": 0
+      },
+      {
+        "name": "Kamino Lend",
+        "apy": 1.81598,
+        "tvl": 87055860,
+        "apyBase": 1.81598,
+        "apyReward": 0
+      }
+    ],
+    "vaultState": {
+      "idle": 0
+    },
+    "action": "hold",
+    "reasoning": "Jupiter Lend at 3.34% APY. Best available: Jupiter Lend at 3.34%. No action needed.",
+    "drift": {
+      "timestamp": "2026-03-15T10:19:40.944Z",
+      "analysis": {
+        "avgAnnual": "-8.45%",
+        "trend": "rising",
+        "consecutivePositive": 0,
+        "consecutiveNegative": 9,
+        "volatility": "0.0013"
+      },
+      "action": "hold",
+      "reasoning": "No entry: funding rate -8.5% below 5% threshold, only 0h consecutive positive (need 12h). Keeping capital in Jupiter Lend.",
+      "confidence": 0
+    }
+  },
+  {
+    "timestamp": "2026-03-15T10:49:40.114Z",
+    "rates": [
+      {
+        "name": "Jupiter Lend",
+        "apy": 3.34037,
+        "tvl": 523025706,
+        "apyBase": 2.21409,
+        "apyReward": 1.12628
+      },
+      {
+        "name": "Save (Solend)",
+        "apy": 3.04,
+        "tvl": 4709712,
+        "apyBase": 3.04,
+        "apyReward": 0
+      },
+      {
+        "name": "Kamino Lend",
+        "apy": 1.82316,
+        "tvl": 86499082,
+        "apyBase": 1.82316,
+        "apyReward": 0
+      }
+    ],
+    "vaultState": {
+      "idle": 0
+    },
+    "action": "hold",
+    "reasoning": "Jupiter Lend at 3.34% APY. Best available: Jupiter Lend at 3.34%. No action needed.",
+    "drift": {
+      "timestamp": "2026-03-15T10:49:40.286Z",
+      "analysis": {
+        "avgAnnual": "-8.45%",
+        "trend": "rising",
+        "consecutivePositive": 0,
+        "consecutiveNegative": 9,
+        "volatility": "0.0013"
+      },
+      "action": "hold",
+      "reasoning": "No entry: funding rate -8.5% below 5% threshold, only 0h consecutive positive (need 12h). Keeping capital in Jupiter Lend.",
+      "confidence": 0
+    }
+  },
+  {
+    "timestamp": "2026-03-15T10:50:43.814Z",
+    "rates": [
+      {
+        "name": "Jupiter Lend",
+        "apy": 3.34037,
+        "tvl": 523025706,
+        "apyBase": 2.21409,
+        "apyReward": 1.12628
+      },
+      {
+        "name": "Save (Solend)",
+        "apy": 3.04,
+        "tvl": 4709712,
+        "apyBase": 3.04,
+        "apyReward": 0
+      },
+      {
+        "name": "Kamino Lend",
+        "apy": 1.82316,
+        "tvl": 86499082,
+        "apyBase": 1.82316,
+        "apyReward": 0
+      }
+    ],
+    "vaultState": {
+      "idle": 0
+    },
+    "action": "hold",
+    "reasoning": "Jupiter Lend at 3.34% APY. Best available: Jupiter Lend at 3.34%. No action needed.",
+    "drift": {
+      "timestamp": "2026-03-15T10:50:43.920Z",
+      "analysis": {
+        "avgAnnual": "-8.24%",
+        "trend": "rising",
+        "consecutivePositive": 1,
+        "consecutiveNegative": 0,
+        "volatility": "0.0013"
+      },
+      "action": "hold",
+      "reasoning": "No entry: funding rate -8.2% below 5% threshold, only 1h consecutive positive (need 12h). Keeping capital in Jupiter Lend.",
+      "confidence": 0
+    }
+  },
+  {
+    "timestamp": "2026-03-15T11:19:41.119Z",
+    "rates": [
+      {
+        "name": "Jupiter Lend",
+        "apy": 3.34037,
+        "tvl": 523025706,
+        "apyBase": 2.21409,
+        "apyReward": 1.12628
+      },
+      {
+        "name": "Save (Solend)",
+        "apy": 3.04,
+        "tvl": 4709712,
+        "apyBase": 3.04,
+        "apyReward": 0
+      },
+      {
+        "name": "Kamino Lend",
+        "apy": 1.82316,
+        "tvl": 86499082,
+        "apyBase": 1.82316,
+        "apyReward": 0
+      }
+    ],
+    "vaultState": {
+      "idle": 0
+    },
+    "action": "hold",
+    "reasoning": "Jupiter Lend at 3.34% APY. Best available: Jupiter Lend at 3.34%. No action needed.",
+    "drift": {
+      "timestamp": "2026-03-15T11:19:41.531Z",
+      "analysis": {
+        "avgAnnual": "-8.15%",
+        "trend": "rising",
+        "consecutivePositive": 1,
+        "consecutiveNegative": 0,
+        "volatility": "0.0013"
+      },
+      "action": "hold",
+      "reasoning": "No entry: funding rate -8.1% below 5% threshold, only 1h consecutive positive (need 12h). Keeping capital in Jupiter Lend.",
+      "confidence": 0
+    }
+  },
+  {
+    "timestamp": "2026-03-15T11:20:36.406Z",
+    "rates": [
+      {
+        "name": "Jupiter Lend",
+        "apy": 3.34037,
+        "tvl": 523025706,
+        "apyBase": 2.21409,
+        "apyReward": 1.12628
+      },
+      {
+        "name": "Save (Solend)",
+        "apy": 3.04,
+        "tvl": 4709712,
+        "apyBase": 3.04,
+        "apyReward": 0
+      },
+      {
+        "name": "Kamino Lend",
+        "apy": 1.82316,
+        "tvl": 86499082,
+        "apyBase": 1.82316,
+        "apyReward": 0
+      }
+    ],
+    "vaultState": {
+      "idle": 0
+    },
+    "action": "hold",
+    "reasoning": "Jupiter Lend at 3.34% APY. Best available: Jupiter Lend at 3.34%. No action needed.",
+    "drift": {
+      "timestamp": "2026-03-15T11:20:37.494Z",
+      "analysis": {
+        "avgAnnual": "-8.15%",
+        "trend": "rising",
+        "consecutivePositive": 1,
+        "consecutiveNegative": 0,
+        "volatility": "0.0013"
+      },
+      "action": "hold",
+      "reasoning": "No entry: funding rate -8.1% below 5% threshold, only 1h consecutive positive (need 12h). Keeping capital in Jupiter Lend.",
+      "confidence": 0
+    }
+  },
+  {
+    "timestamp": "2026-03-15T11:49:38.740Z",
+    "rates": [
+      {
+        "name": "Jupiter Lend",
+        "apy": 3.34037,
+        "tvl": 522494455,
+        "apyBase": 2.21409,
+        "apyReward": 1.12628
+      },
+      {
+        "name": "Save (Solend)",
+        "apy": 3.04,
+        "tvl": 4714212,
+        "apyBase": 3.04,
+        "apyReward": 0
+      },
+      {
+        "name": "Kamino Lend",
+        "apy": 1.81759,
+        "tvl": 86933079,
+        "apyBase": 1.81759,
+        "apyReward": 0
+      }
+    ],
+    "vaultState": {
+      "idle": 0
+    },
+    "action": "hold",
+    "reasoning": "Jupiter Lend at 3.34% APY. Best available: Jupiter Lend at 3.34%. No action needed.",
+    "drift": {
+      "timestamp": "2026-03-15T11:49:39.044Z",
+      "analysis": {
+        "avgAnnual": "-8.15%",
+        "trend": "rising",
+        "consecutivePositive": 1,
+        "consecutiveNegative": 0,
+        "volatility": "0.0013"
+      },
+      "action": "hold",
+      "reasoning": "No entry: funding rate -8.1% below 5% threshold, only 1h consecutive positive (need 12h). Keeping capital in Jupiter Lend.",
+      "confidence": 0
+    }
+  },
+  {
+    "timestamp": "2026-03-15T12:19:40.340Z",
+    "rates": [
+      {
+        "name": "Jupiter Lend",
+        "apy": 3.34037,
+        "tvl": 522494455,
+        "apyBase": 2.21409,
+        "apyReward": 1.12628
+      },
+      {
+        "name": "Save (Solend)",
+        "apy": 3.04,
+        "tvl": 4714212,
+        "apyBase": 3.04,
+        "apyReward": 0
+      },
+      {
+        "name": "Kamino Lend",
+        "apy": 1.81759,
+        "tvl": 86933079,
+        "apyBase": 1.81759,
+        "apyReward": 0
+      }
+    ],
+    "vaultState": {
+      "idle": 0
+    },
+    "action": "hold",
+    "reasoning": "Jupiter Lend at 3.34% APY. Best available: Jupiter Lend at 3.34%. No action needed.",
+    "drift": {
+      "timestamp": "2026-03-15T12:19:40.625Z",
+      "analysis": {
+        "avgAnnual": "-7.77%",
+        "trend": "rising",
+        "consecutivePositive": 2,
+        "consecutiveNegative": 0,
+        "volatility": "0.0013"
+      },
+      "action": "hold",
+      "reasoning": "No entry: funding rate -7.8% below 5% threshold, only 2h consecutive positive (need 12h). Keeping capital in Jupiter Lend.",
+      "confidence": 0
+    }
+  },
+  {
+    "timestamp": "2026-03-15T12:49:39.822Z",
+    "rates": [
+      {
+        "name": "Jupiter Lend",
+        "apy": 3.34037,
+        "tvl": 522407234,
+        "apyBase": 2.21409,
+        "apyReward": 1.12628
+      },
+      {
+        "name": "Save (Solend)",
+        "apy": 3.04,
+        "tvl": 4708251,
+        "apyBase": 3.04,
+        "apyReward": 0
+      },
+      {
+        "name": "Kamino Lend",
+        "apy": 1.82213,
+        "tvl": 86582974,
+        "apyBase": 1.82213,
+        "apyReward": 0
+      }
+    ],
+    "vaultState": {
+      "idle": 0
+    },
+    "action": "hold",
+    "reasoning": "Jupiter Lend at 3.34% APY. Best available: Jupiter Lend at 3.34%. No action needed.",
+    "drift": {
+      "timestamp": "2026-03-15T12:49:40.064Z",
+      "analysis": {
+        "avgAnnual": "-7.77%",
+        "trend": "rising",
+        "consecutivePositive": 2,
+        "consecutiveNegative": 0,
+        "volatility": "0.0013"
+      },
+      "action": "hold",
+      "reasoning": "No entry: funding rate -7.8% below 5% threshold, only 2h consecutive positive (need 12h). Keeping capital in Jupiter Lend.",
+      "confidence": 0
+    }
+  },
+  {
+    "timestamp": "2026-03-15T13:19:42.252Z",
+    "rates": [
+      {
+        "name": "Jupiter Lend",
+        "apy": 3.34037,
+        "tvl": 522407234,
+        "apyBase": 2.21409,
+        "apyReward": 1.12628
+      },
+      {
+        "name": "Save (Solend)",
+        "apy": 3.04,
+        "tvl": 4708251,
+        "apyBase": 3.04,
+        "apyReward": 0
+      },
+      {
+        "name": "Kamino Lend",
+        "apy": 1.82213,
+        "tvl": 86582974,
+        "apyBase": 1.82213,
+        "apyReward": 0
+      }
+    ],
+    "vaultState": {
+      "idle": 0
+    },
+    "action": "hold",
+    "reasoning": "Jupiter Lend at 3.34% APY. Best available: Jupiter Lend at 3.34%. No action needed.",
+    "drift": {
+      "timestamp": "2026-03-15T13:19:42.601Z",
+      "analysis": {
+        "avgAnnual": "-7.41%",
+        "trend": "rising",
+        "consecutivePositive": 3,
+        "consecutiveNegative": 0,
+        "volatility": "0.0013"
+      },
+      "action": "hold",
+      "reasoning": "No entry: funding rate -7.4% below 5% threshold, only 3h consecutive positive (need 12h). Keeping capital in Jupiter Lend.",
+      "confidence": 0
+    }
+  },
+  {
+    "timestamp": "2026-03-15T13:35:22.642Z",
+    "rates": [
+      {
+        "name": "Jupiter Lend",
+        "apy": 3.34037,
+        "tvl": 522693010,
+        "apyBase": 2.21409,
+        "apyReward": 1.12628
+      },
+      {
+        "name": "Save (Solend)",
+        "apy": 3.04,
+        "tvl": 4703371,
+        "apyBase": 3.04,
+        "apyReward": 0
+      },
+      {
+        "name": "Kamino Lend",
+        "apy": 1.82225,
+        "tvl": 86573153,
+        "apyBase": 1.82225,
+        "apyReward": 0
+      }
+    ],
+    "vaultState": {
+      "idle": 0
+    },
+    "action": "hold",
+    "reasoning": "Jupiter Lend at 3.34% APY. Best available: Jupiter Lend at 3.34%. No action needed.",
+    "drift": {
+      "timestamp": "2026-03-15T13:35:22.701Z",
+      "analysis": {
+        "avgAnnual": "-7.41%",
+        "trend": "rising",
+        "consecutivePositive": 3,
+        "consecutiveNegative": 0,
+        "volatility": "0.0013"
+      },
+      "action": "hold",
+      "reasoning": "No entry: funding rate -7.4% below 5% threshold, only 3h consecutive positive (need 12h). Keeping capital in Jupiter Lend.",
+      "confidence": 0
+    }
+  },
+  {
+    "timestamp": "2026-03-15T13:50:18.414Z",
+    "rates": [
+      {
+        "name": "Jupiter Lend",
+        "apy": 3.34037,
+        "tvl": 522693010,
+        "apyBase": 2.21409,
+        "apyReward": 1.12628
+      },
+      {
+        "name": "Save (Solend)",
+        "apy": 3.04,
+        "tvl": 4703371,
+        "apyBase": 3.04,
+        "apyReward": 0
+      },
+      {
+        "name": "Kamino Lend",
+        "apy": 1.82225,
+        "tvl": 86573153,
+        "apyBase": 1.82225,
+        "apyReward": 0
+      }
+    ],
+    "vaultState": {
+      "idle": 0
+    },
+    "action": "hold",
+    "reasoning": "Jupiter Lend at 3.34% APY. Best available: Jupiter Lend at 3.34%. No action needed.",
+    "drift": {
+      "timestamp": "2026-03-15T13:50:18.707Z",
+      "analysis": {
+        "avgAnnual": "-7.41%",
+        "trend": "rising",
+        "consecutivePositive": 3,
+        "consecutiveNegative": 0,
+        "volatility": "0.0013"
+      },
+      "action": "hold",
+      "reasoning": "No entry: funding rate -7.4% below 5% threshold, only 3h consecutive positive (need 12h). Keeping capital in Jupiter Lend.",
+      "confidence": 0
+    }
+  },
+  {
+    "timestamp": "2026-03-15T19:49:29.282Z",
+    "rates": [
+      {
+        "name": "Jupiter Lend",
+        "apy": 3.34037,
+        "tvl": 523409587,
+        "apyBase": 2.21409,
+        "apyReward": 1.12628
+      },
+      {
+        "name": "Save (Solend)",
+        "apy": 3.05,
+        "tvl": 4649108,
+        "apyBase": 3.05,
+        "apyReward": 0
+      },
+      {
+        "name": "Kamino Lend",
+        "apy": 1.82713,
+        "tvl": 86194279,
+        "apyBase": 1.82713,
+        "apyReward": 0
+      }
+    ],
+    "vaultState": {
+      "idle": 0
+    },
+    "action": "hold",
+    "reasoning": "Jupiter Lend at 3.34% APY. Best available: Jupiter Lend at 3.34%. No action needed.",
+    "drift": {
+      "timestamp": "2026-03-15T19:49:29.582Z",
+      "analysis": {
+        "avgAnnual": "-4.68%",
+        "trend": "rising",
+        "consecutivePositive": 3,
+        "consecutiveNegative": 0,
+        "volatility": "0.0011"
+      },
+      "action": "hold",
+      "reasoning": "No entry: funding rate -4.7% below 5% threshold, only 3h consecutive positive (need 12h). Keeping capital in Jupiter Lend.",
+      "confidence": 0
+    }
+  },
+  {
+    "timestamp": "2026-03-16T03:19:40.756Z",
+    "rates": [
+      {
+        "name": "Kamino Lend",
+        "apy": 6.42224,
+        "tvl": 9325729,
+        "apyBase": 6.42224,
+        "apyReward": 0
+      },
+      {
+        "name": "Jupiter Lend",
+        "apy": 3.11612,
+        "tvl": 544788481,
+        "apyBase": 2.03028,
+        "apyReward": 1.08584
+      },
+      {
+        "name": "Save (Solend)",
+        "apy": 3.04,
+        "tvl": 4676316,
+        "apyBase": 3.04,
+        "apyReward": 0
+      }
+    ],
+    "vaultState": {
+      "idle": 0
+    },
+    "action": "rebalance_needed",
+    "reasoning": "Kamino Lend (6.42%) is >15% better than Jupiter Lend (3.12%). Rebalance recommended when strategy is available.",
+    "drift": {
+      "timestamp": "2026-03-16T03:19:41.014Z",
+      "analysis": {
+        "avgAnnual": "-7.45%",
+        "trend": "falling",
+        "consecutivePositive": 0,
+        "consecutiveNegative": 7,
+        "volatility": "0.0017"
+      },
+      "action": "hold",
+      "reasoning": "No entry: funding rate -7.5% below 5% threshold, only 0h consecutive positive (need 12h), funding trend is falling. Keeping capital in Jupiter Lend.",
+      "confidence": 0
+    }
+  },
+  {
+    "timestamp": "2026-03-16T03:19:53.933Z",
+    "rates": [
+      {
+        "name": "Kamino Lend",
+        "apy": 6.42224,
+        "tvl": 9325729,
+        "apyBase": 6.42224,
+        "apyReward": 0
+      },
+      {
+        "name": "Jupiter Lend",
+        "apy": 3.11612,
+        "tvl": 544788481,
+        "apyBase": 2.03028,
+        "apyReward": 1.08584
+      },
+      {
+        "name": "Save (Solend)",
+        "apy": 3.04,
+        "tvl": 4676316,
+        "apyBase": 3.04,
+        "apyReward": 0
+      }
+    ],
+    "vaultState": {
+      "idle": 0
+    },
+    "action": "rebalance_needed",
+    "reasoning": "Kamino Lend (6.42%) is >15% better than Jupiter Lend (3.12%). Rebalance recommended when strategy is available.",
+    "drift": {
+      "timestamp": "2026-03-16T03:19:54.000Z",
+      "analysis": {
+        "avgAnnual": "-7.45%",
+        "trend": "falling",
+        "consecutivePositive": 0,
+        "consecutiveNegative": 7,
+        "volatility": "0.0017"
+      },
+      "action": "hold",
+      "reasoning": "No entry: funding rate -7.5% below 5% threshold, only 0h consecutive positive (need 12h), funding trend is falling. Keeping capital in Jupiter Lend.",
+      "confidence": 0
+    }
   }
 ]
